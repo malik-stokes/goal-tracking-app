@@ -1,6 +1,6 @@
 # Goal Tracking App
 
-A goal-tracking web application built with Angular that allows users to create, complete, and remove goals through a responsive user interface.
+A goal-tracking web application built with Angular that allows users to create, complete, and delete goals through a responsive user interface.
 
 ## Features
 
