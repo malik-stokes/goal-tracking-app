@@ -1,0 +1,109 @@
+.habit-container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  font-family: system-ui, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3a78c2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* When a habit is marked done */
+li.done {
+  background: #e6f7e6;        /* soft green background */
+  border-left: 4px solid #4caf50;
+  opacity: 0.85;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #4caf50;
+  font-weight: 600;
+}
+
+li.done button:nth-child(2) {
+  background: #9ccc65;        /* softer green for done button */
+}
+
+li.done button:nth-child(2):hover {
+  background: #7cb342;
+}
+
+
+li span {
+  font-size: 15px;
+}
+
+button:nth-child(2) {
+  background: #5fc03e;
+}
+
+button:nth-child(2):hover {
+  background: #4e9e4e;
+}
+
+button:nth-child(3) {
+  background: #d9534f;
+}
+
+button:nth-child(3):hover {
+  background: #c64541;
+}
