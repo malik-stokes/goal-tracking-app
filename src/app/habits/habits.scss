@@ -79,31 +79,45 @@ li.done span {
   font-weight: 600;
 }
 
-li.done button:nth-child(2) {
-  background: #9ccc65;        /* softer green for done button */
-}
-
-li.done button:nth-child(2):hover {
-  background: #7cb342;
-}
-
-
 li span {
   font-size: 15px;
 }
 
-button:nth-child(2) {
+.done-btn {
   background: #5fc03e;
 }
 
-button:nth-child(2):hover {
+.done-btn:hover {
   background: #4e9e4e;
 }
 
-button:nth-child(3) {
+.delete-btn {
   background: #d9534f;
 }
 
-button:nth-child(3):hover {
+.delete-btn:hover {
   background: #c64541;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+  padding-right: 10px;
+}
+
+li button {
+  flex-shrink: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
 }

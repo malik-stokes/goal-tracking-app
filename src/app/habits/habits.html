@@ -21,9 +21,15 @@
 
   <ul>
     <li *ngFor="let habit of habits(); let i = index" [class.done]="habit.done">
-      <span>{{ habit.name }}</span>
-      <button (click)="markDone(i)">Mark done</button>
-      <button (click)="deleteHabit(i)">Delete</button>
+      <span>{{ i + 1 }}. {{ habit.name }}</span>
+
+      <div class="actions">
+        <button class="done-btn" (click)="toggleDone(i)">
+          {{ habit.done ? 'Mark Undone' : 'Mark Done' }}
+        </button>
+
+        <button class="delete-btn"(click)="deleteHabit(i)">Delete</button>
+      </div>
     </li>
   </ul>
 </div>

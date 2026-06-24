@@ -32,11 +32,16 @@ export class Habits {
 }
 
 
-  markDone(index: number) {
-    this.habits.update(h =>
-      h.map((habit, i) =>
-        i === index ? { ...habit, done: true } : habit
-      )
-    );
+  toggleDone(index: number) {
+    this.habits.update(habits => {
+      const updated = [...habits];
+
+      updated[index] = {
+        ...updated[index],
+        done: !updated[index].done
+      };
+
+      return updated;
+    });
   }
 }
